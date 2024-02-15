@@ -1,4 +1,4 @@
-
+// ======
 function hideElementById(hideSection){
     const hiddenSection = document.getElementById(hideSection);
     hiddenSection.classList.add('hidden');   
@@ -7,6 +7,18 @@ function showElementById(showSection){
     const showingSection = document.getElementById(showSection);
     showingSection.classList.remove('hidden');
 }
+
+// ======
+function setBackgoundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
+function removeBackgoundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
+
+// ======
 function getARandomAlphabet(){
     // create an Alphabet Array
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
