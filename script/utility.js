@@ -19,6 +19,22 @@ function removeBackgoundColorById(elementId){
 }
 
 // ======
+function updateScore(elementId){
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    const elementNumber = parseInt(elementText);
+    const newScore = elementNumber + 1;
+    element.innerText = newScore; 
+}
+function updateLife(elementId){
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    const elementNumber = parseInt(elementText);
+    const newScore = elementNumber - 1;
+    element.innerText = newScore;
+}
+
+// ======
 function getARandomAlphabet(){
     // create an Alphabet Array
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
