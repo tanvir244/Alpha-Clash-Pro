@@ -19,19 +19,22 @@ function removeBackgoundColorById(elementId){
 }
 
 // ======
-function updateScore(elementId){
+function getTextElementValueById(elementId){
     const element = document.getElementById(elementId);
     const elementText = element.innerText;
-    const elementNumber = parseInt(elementText);
-    const newScore = elementNumber + 1;
-    element.innerText = newScore; 
+    const value = parseInt(elementText);
+    return value; 
 }
-function updateLife(elementId){
+function setElementValueById(elementId, value){
     const element = document.getElementById(elementId);
-    const elementText = element.innerText;
-    const elementNumber = parseInt(elementText);
-    const newScore = elementNumber - 1;
-    element.innerText = newScore;
+    element.innerText = value;
+}
+
+// ======
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
 }
 
 // ======
